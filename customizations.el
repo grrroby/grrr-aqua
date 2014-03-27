@@ -68,6 +68,10 @@
 (setq indent-tabs-mode 1)
 (setq ruby-indent-level 4)
 
+;; To use graphviz-dot-mode, add 
+;;(load-file "graphviz-dot-mode.el")
+(require 'graphviz-dot-mode)
+(add-to-list 'auto-mode-alist '("\\.dot\\'" . graphviz-dot-mode))
 
 ;;-----------------
 (custom-set-faces
